@@ -1,9 +1,10 @@
 from classes.DBWorker import DBWorker
-from classes.TelegramBot import TelegramBot
+from classes.TelegraMoneyBot import TelegraMoneyBot
 
 def main():
     dbWorker = DBWorker()
-    bot = TelegramBot()
+    bot = TelegraMoneyBot(dbWorker, '513541660:AAFOKu6tSYuW489hcEURnJ57TtfmfpfEjE4')
+    bot.polling()
     pass
 
 if __name__=='__main__':
